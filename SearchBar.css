@@ -1,0 +1,91 @@
+/* Global styles for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background for the entire screen */
+    color: #ffffff; /* White text color for contrast */
+    font-family: Arial, sans-serif; /* Set a basic font for readability */
+}
+
+/* Container for the search bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: #333333; /* Dark gray background for the container */
+    padding: 10px; /* Padding around the search bar */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
+}
+
+/* Style for the Select component wrapper */
+.search-bar .react-select__control {
+    border: 1px solid #555555; /* Darker gray border */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(222, 44, 44, 0.926);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    min-width: 300px; /* Minimum width for better visibility */
+    max-width: 500px; /* Maximum width to prevent it from getting too wide */
+    width: 100%; /* Make it responsive */
+    background-color: #1a1a1a; /* Very dark gray background for the select box */
+}
+
+/* Hover and focus styles */
+.search-bar .react-select__control:hover {
+    border-color: #777777; /* Slightly lighter gray border on hover */
+}
+
+.search-bar .react-select__control--is-focused {
+    border-color: #007bff; /* Blue border when focused */
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2); /* Light blue shadow on focus */
+}
+
+/* Style for the placeholder text */
+.search-bar .react-select__placeholder {
+    color: #cccccc; /* Light gray color for placeholder text */
+}
+
+/* Style for the selected item */
+.search-bar .react-select__single-value {
+    color: #ffffff; /* White color for selected item text */
+}
+
+/* Style for the dropdown menu */
+.search-bar .react-select__menu {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    background-color: #000000; /* Black background for the dropdown menu */
+}
+
+/* Style for dropdown items */
+.search-bar .react-select__option {
+    padding: 8px 12px;
+    background-color: #000000; /* Black background for dropdown items */
+    color: #ffffff; /* White color for dropdown item text */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transitions */
+}
+
+/* Hover effect for dropdown items */
+.search-bar .react-select__option:hover {
+    background-color: #333333; /* Darker gray background on hover */
+    color: #ffffff; /* Keep text color white on hover */
+}
+
+/* No options message style */
+.search-bar .react-select__no-options {
+    padding: 8px 12px;
+    color: #cccccc; /* Light gray color for no options message */
+    background-color: #000000; /* Black background for no options message */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .search-bar {
+        margin: 10px;
+    }
+
+    .search-bar .react-select__control {
+        min-width: 100%; /* Full width on small screens */
+    }
+}
